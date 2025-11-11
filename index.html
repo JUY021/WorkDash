@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkDash 포트폴리오 | 전우영</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons CDN - Moved to end of body for reliability -->
+
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans KR', sans-serif;
+            background-color: #f8fafc; /* bg-slate-50 */
+        }
+        /* Tailwind @apply rules removed for CDN compatibility. Styles are now applied directly in the HTML. */
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <!-- Header / Hero Section -->
+    <header class="w-full bg-white shadow-md">
+        <div class="max-w-5xl mx-auto p-6 md:p-10">
+            <div class="flex flex-col md:flex-row items-center gap-6 md:gap-10">
+                <!-- Profile Image Placeholder -->
+                <div class="flex-shrink-0">
+                    <img src="https://placehold.co/128x128/e0e7ff/6366f1?text=WJ" 
+                         alt="프로필 이미지" 
+                         class="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg">
+                </div>
+                <!-- Intro Text -->
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl font-bold text-slate-900">전우영</h1>
+                    <p class="text-xl font-medium text-indigo-600 mt-2">
+                        "생활의 불편함을 기술로 해결하여 사용자의 효율을 추구하는 백엔드 개발자 전우영입니다."
+                    </p>
+                    <!-- Contact Links -->
+                    <div class="flex justify-center md:justify-start items-center space-x-6 mt-4">
+                        <a href="mailto:wjsdndud02@gmail.com" class="flex items-center space-x-2 text-slate-600 hover:text-indigo-600 transition-colors">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                            <span>wjsdndud02@gmail.com</span>
+                        </a>
+                        <a href="https://github.com/JUY021" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 text-slate-600 hover:text-indigo-600 transition-colors">
+                            <i data-lucide="github" class="w-5 h-5"></i>
+                            <span>github.com/JUY021</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto p-6 md:p-10 space-y-8">
+
+        <!-- About Me Section -->
+        <section class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
+            <div class="p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-slate-800 mb-6 border-l-4 border-indigo-500 pl-3">1. About Me</h2>
+                <div class="space-y-4 text-slate-600 leading-relaxed">
+                    <p>저는 사용자의 편리함과 작업 효율을 최우선으로 생각하며, 실생활의 불편함을 기술로 해결하는 백엔드 개발자 전우영입니다.</p>
+                    <p>이번 '작업 대시보드' 프로젝트는 이러한 저의 개발 철학을 바탕으로 시작되었습니다. Windows 환경에서 다수의 창과 탭을 관리하며 제가 직접 느꼈던 비효율을 개선하고자 1인 개발을 주도했습니다.</p>
+                    <p>이 과정에서 Python 데스크톱 앱, JavaScript 확장 프로그램, 그리고 Gemini AI API를 연동하며 서로 다른 시스템을 통합하고 데이터를 처리하는 백엔드 로직을 설계했습니다. 저는 이처럼 복잡한 문제를 분해하고, 안정적인 아키텍처를 구축하여 사용자에게 실질적인 편리함을 제공하는 솔루션을 만드는 데 큰 보람을 느낍니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
+            <div class="p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-slate-800 mb-6 border-l-4 border-indigo-500 pl-3">2. Skills</h2>
+                <!-- [Modified] Skills grid layout with nested-card style -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                        <h3 class="text-xl font-semibold text-slate-700 mt-0 mb-3">프론트엔드</h3>
+                        <div>
+                            <span class="inline-block bg-indigo-100 text-indigo-700 text-sm font-medium px-3 py-1 rounded-full mr-2 mb-2 transition-transform duration-200 hover:scale-105">React</span>
+                            <span class="inline-block bg-indigo-100 text-indigo-700 text-sm font-medium px-3 py-1 rounded-full mr-2 mb-2 transition-transform duration-200 hover:scale-105">JavaScript</span>
+                            <span class="inline-block bg-indigo-100 text-indigo-700 text-sm font-medium px-3 py-1 rounded-full mr-2 mb-2 transition-transform duration-200 hover:scale-105">TypeScript</span>
+                            <span class="inline-block bg-indigo-100 text-indigo-700 text-sm font-medium px-3 py-1 rounded-full mr-2 mb-2 transition-transform duration-200 hover:scale-105">HTML5</span>
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                        <h3 class="text-xl font-semibold text-slate-700 mt-0 mb-3">백엔드</h3>
+                        <div>
+                            <span class="inline-block bg-indigo-100 text-indigo-700 text-sm font-medium px-3 py-1 rounded-full mr-2 mb-2 transition-transform duration-200 hover:scale-105">Python</span>
+                            <span class="inline-block bg-indigo-100 text-indigo-700 text-sm font-medium px-3 py-1 rounded-full mr-2 mb-2 transition-transform duration-200 hover:scale-105">Java</span>
+                            <span class="inline-block bg-indigo-100 text-indigo-700 text-sm font-medium px-3 py-1 rounded-full mr-2 mb-2 transition-transform duration-200 hover:scale-105">Spring Boot</span>
+                            <span class="inline-block bg-indigo-100 text-indigo-700 text-sm font-medium px-3 py-1 rounded-full mr-2 mb-2 transition-transform duration-200 hover:scale-105">JSP</span>
+                            <span class="inline-block bg-indigo-100 text-indigo-700 text-sm font-medium px-3 py-1 rounded-full mr-2 mb-2 transition-transform duration-200 hover:scale-105">Node.js</span>
+                            <span class="inline-block bg-indigo-100 text-indigo-700 text-sm font-medium px-3 py-1 rounded-full mr-2 mb-2 transition-transform duration-200 hover:scale-105">PostgreSQL</span>
+                            <span class="inline-block bg-indigo-100 text-indigo-700 text-sm font-medium px-3 py-1 rounded-full mr-2 mb-2 transition-transform duration-200 hover:scale-105">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                        <h3 class="text-xl font-semibold text-slate-700 mt-0 mb-3">DevOps & Tools</h3>
+                        <div>
+                            <span class="inline-block bg-indigo-100 text-indigo-700 text-sm font-medium px-3 py-1 rounded-full mr-2 mb-2 transition-transform duration-200 hover:scale-105">AWS</span>
+                            <span class="inline-block bg-indigo-100 text-indigo-700 text-sm font-medium px-3 py-1 rounded-full mr-2 mb-2 transition-transform duration-200 hover:scale-105">Oracle Cloud</span>
+                            <span class="inline-block bg-indigo-100 text-indigo-700 text-sm font-medium px-3 py-1 rounded-full mr-2 mb-2 transition-transform duration-200 hover:scale-105">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Details Section -->
+        <section class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
+            <div class="p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-slate-800 mb-6 border-l-4 border-indigo-500 pl-3">3. Project: WorkDash (작업 대시보드)</h2>
+                
+                <!-- [Modified] Nested card layout for all subsections -->
+                <div class="space-y-6">
+                    <!-- 문제 정의 -->
+                    <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                        <h3 class="text-xl font-semibold text-slate-700 mt-0 mb-3">[ 문제 정의 ]</h3>
+                        <p class="text-slate-600 mb-3">Windows 환경에서 다수의 애플리케이션과 브라우저 탭을 동시에 실행하며 작업할 때, 현재 열려있는 창의 맥락을 한눈에 파악하고 분류하기 어렵다는 문제가 있었습니다. 이로 인해 작업 간 전환(Context Switching)에 불필요한 시간이 소요되고, 원하는 정보나 창을 다시 찾는 데 비효율이 발생했습니다.</p>
+                        <p class="font-semibold text-indigo-700 bg-indigo-50 p-4 rounded-lg">
+                            <strong>목표:</strong> 이 '작업 대시보드' 프로젝트의 목표는, 현재 실행 중인 모든 윈도우와 탭을 한곳에서 통합 관리하고, AI를 활용해 자동으로 분류/요약함으로써 사용자가 자신의 작업을 쉽게 탐색하고 관리할 수 있는 환경을 제공하는 것이었습니다.
+                        </p>
+                    </div>
+
+                    <!-- 아키텍처 -->
+                    <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                        <h3 class="text-xl font-semibold text-slate-700 mt-0 mb-3">[ 아키텍처 / 설계 ]</h3>
+                        <p class="text-slate-600 mb-4">핵심 로직은 Python을 기반으로 설계되었습니다.</p>
+                        <ol class="list-decimal list-outside text-slate-600 space-y-2 pl-5">
+                            <li><strong>(수집)</strong> Python 스크립트가 로컬 Windows 환경에서 현재 활성화된 애플리케A션 목록과 브라우저 탭 정보(창 제목, URL)를 실시간으로 수집합니다.</li>
+                            <li><strong>(분석)</strong> 수집된 텍스트 데이터(창 제목 묶음)는 Gemini API로 전송됩니다.</li>
+                            <li><strong>(처리)</strong> Gemini API는 이 정보를 분석하여, 각 작업을 '업무', '학습', '여가' 등으로 자동 분류하거나 현재 작업 내용을 요약합니다.</li>
+                            <li><strong>(시각화)</strong> 이 결과가 Python으로 제작된 데스크톱 GUI 애플리케이션에 표시되어, 사용자는 수동 개입 없이 정리된 작업 목록을 확인할 수 있습니다.</li>
+                        </ol>
+                    </div>
+
+                    <!-- 핵심 기능 1 -->
+                    <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                        <h3 class="text-xl font-semibold text-slate-700 mt-0 mb-3">[ 핵심 기능 1: 브라우저 확장 프로그램과 Python을 연동한 작업 데이터 통합 수집 ]</h3>
+                        <p class="text-slate-600 mb-4">로컬 PC의 작업 데이터를 수집하기 위해 두 가지 파트로 나누어 개발했습니다.</p>
+                        <ol class="list-decimal list-outside text-slate-600 space-y-2 pl-5">
+                            <li><strong>브라우저 탭 수집:</strong> JavaScript 기반의 임시 <strong>브라우저 확장 프로그램(Extension)</strong>을 제작했습니다. 이 확장 프로그램은 사용자가 열어둔 모든 브라우저 탭의 제목과 URL을 실시간으로 읽어옵니다.</li>
+                            <li><strong>데이터 통신:</strong> 확장 프로그램은 수집한 탭 정보를 JSON 형식으로 파이썬 백엔드 스크립트에 전달합니다.</li>
+                            <li><strong>데이터 통합:</strong> Python 스크립트는 전달받은 JSON 데이터(브라우저 탭)와 Windows API로 수집한 로컬 애플리케이션(창 제목) 목록을 하나로 통합하여 분석을 위한 원본 데이터를 완성합니다.</li>
+                        </ol>
+                    </div>
+
+                    <!-- 핵심 기능 2 -->
+                    <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                        <h3 class="text-xl font-semibold text-slate-700 mt-0 mb-3">[ 핵심 기능 2: Gemini API를 활용한 작업 자동 분류 및 요약 ]</h3>
+                        <p class="text-slate-600">[핵심 기능 1]에서 통합 수집된 텍스트 데이터(창 제목, 탭 제목 등)를 Gemini API로 전송했습니다. API가 이 텍스트 묶음을 분석하여 현재 사용자의 작업 맥락을 이해하도록 프롬프트를 설계했습니다. API는 "['업무: 3개', '학습: 2개', '여가: 1개']"와 같이 각 항목을 자동으로 분류하거나, "현재 Python 프로젝트 개발과 React 관련 자료 조사를 병행하고 있음"처럼 현재 작업 상태를 한 문장으로 요약한 결과를 JSON 형식으로 반환합니다. 이 결과는 즉시 대시보드 UI에 시각화됩니다.</p>
+                    </div>
+
+                    <!-- 나의 역할 -->
+                    <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                        <h3 class="text-xl font-semibold text-slate-700 mt-0 mb-3">[ 나의 역할 및 기여 ]</h3>
+                        <p class="text-slate-600 mb-4">이 프로젝트는 1인 프로젝트로, 기획부터 설계, 개발까지 모든 과정을 주도했습니다.</p>
+                        <ul class="list-disc list-outside text-slate-600 space-y-2 pl-5">
+                            <li>프로젝트 아키텍처 설계 및 1인 개발 총괄</li>
+                            <li>Python 기반 데스크톱 애플리케이션 UI(GUI) 설계 및 개발</li>
+                            <li>Windows 환경의 활성 애플리케이션 정보 수집 로직 구현 (Python)</li>
+                            <li>브라우저 탭 정보 수집을 위한 JavaScript 기반 확장 프로그램 개발</li>
+                            <li>확장 프로그램과 Python 애플리케이션 간의 JSON 데이터 통신 파이프라인 구축</li>
+                            <li>Gemini API 연동 및 작업 자동 분류/요약을 위한 프롬프트 엔지니어링</li>
+                        </ul>
+                    </div>
+
+                    <!-- 결과 및 성과 -->
+                    <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                        <h3 class="text-xl font-semibold text-slate-700 mt-0 mb-3">[ 결과 및 성과 ]</h3>
+                        <ul class="list-disc list-outside text-slate-600 space-y-2 pl-5">
+                            <li>분산되어 있던 Windows 애플리케이션과 브라우저 탭을 하나의 대시보드로 통합 관리하는 데 성공했습니다.</li>
+                            <li>Gemini API를 통해 현재 작업 맥락을 자동으로 분류하고 요약함으로써, 수동으로 작업을 확인하고 전환하는 데 걸리는 시간과 인지적 부담을 획기적으로 줄였습니다.</li>
+                            <li>Python 데스크톱 앱, 브라우저 확장 프로그램, 외부 AI API(Gemini)라는 세 가지 다른 기술 스택을 성공적으로 연동하여 실시간 데이터 파이프라인을 구축했습니다.</li>
+                        </ul>
+                    </div>
+
+                    <!-- 회고 -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                            <h4 class="text-lg font-semibold text-slate-800 mb-3">[ 회고 (배운 점) ]</h4>
+                            <ul class="list-disc list-outside text-slate-600 space-y-2 pl-5">
+                                <li><strong>(기술 통합)</strong> Python 데스크톱 GUI, JavaScript 기반 브라우저 확장 프로그램, 그리고 Gemini라는 외부 API를 연동하는 과정에서 서로 다른 환경 간의 데이터 통신(JSON) 파이프라인을 설계하고 디버깅하는 실전 경험을 쌓았습니다.</li>
+                                <li><strong>(AI 활용)</strong> 단순히 AI API를 호출하는 것을 넘어, 내가 원하는 '분류'와 '요약' 결과를 정확히 얻어내기 위한 프롬프트 엔지니어링의 중요성을 깊이 이해하게 되었습니다.</li>
+                                <li><strong>(문제 해결)</strong> 로컬 PC 환경의 데이터를 다루다 보니 다양한 예외 상황(예: 프로그램 응답 없음, 탭 정보 로드 실패)을 마주했습니다. 이를 안정적으로 처리하는 로직을 고민하며 방어적인 코드(Defensive Code) 작성의 필요성을 배웠습니다.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-slate-50 p-6 rounded-lg border border-slate-200">
+                            <h4 class="text-lg font-semibold text-slate-800 mb-3">[ 회고 (개선점) ]</h4>
+                            <ul class="list-disc list-outside text-slate-600 space-y-2 pl-5">
+                                <li><strong>(성능 최적화)</strong> 현재는 일정 주기마다 모든 정보를 새로고침하는데, 이로 인해 시스템에 불필요한 부하가 발생할 수 있습니다. 향후에는 <strong>이벤트 기반(Event-driven)</strong>으로 변경 사항이 생길 때만 데이터를 수집하도록 최적화하고 싶습니다.</li>
+                                <li><strong>(UI/UX 고도화)</strong> 지금은 기능 구현에 집중했지만, 사용자가 분류 결과를 직접 수정하거나 중요 작업을 고정하는 등 상호작용이 가능한 UI/UX를 추가하여 사용성을 높이고 싶습니다.</li>
+                                <li><strong>(확장성)</strong> 현재는 Windows와 특정 브라우저로 한정되어 있습니다. 향후에는 macOS나 Linux 환경, 그리고 Firefox, Edge 등 다른 브라우저도 지원할 수 있도록 구조를 개선해 보고 싶습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Gallery Section -->
+        <section class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
+            <div class="p-6 md:p-8">
+                <h2 class="text-3xl font-bold text-slate-800 mb-6 border-l-4 border-indigo-500 pl-3">4. 관련 이미지</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-xl font-semibold text-slate-700 mt-6 mb-3">프로젝트 메인 이미지</h3>
+                        <img src="https://placehold.co/600x400/e0e7ff/6366f1?text=WorkDash+Main" alt="프로젝트 메인 이미지" class="rounded-lg shadow-md w-full object-cover">
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-slate-700 mt-6 mb-3">아키텍처 다이어그램</h3>
+                        <img src="https://placehold.co/600x400/e0e7ff/6366f1?text=Architecture" alt="아키텍처 다이어그램" class="rounded-lg shadow-md w-full object-cover">
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-slate-700 mt-6 mb-3">핵심 기능 1 스크린샷</h3>
+                        <img src="https://placehold.co/600x400/e0e7ff/6366f1?text=Feature+1+Screenshot" alt="핵심 기능 1 스크린샷" class="rounded-lg shadow-md w-full object-cover">
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-slate-700 mt-6 mb-3">핵심 기능 2 스크린샷</h3>
+                        <img src="https://placehold.co/600x400/e0e7ff/6366f1?text=Feature+2+Screenshot" alt="핵심 기능 2 스크린샷" class="rounded-lg shadow-md w-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center p-6 text-sm text-slate-500">
+        © 2024 전우영. All rights reserved.
+    </footer>
+
+    <!-- Lucide Icons CDN (UMD Build) -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- Lucide Icons Initializer -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
